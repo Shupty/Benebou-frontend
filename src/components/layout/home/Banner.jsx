@@ -12,7 +12,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const Banner = () => {
   return (
-    <section className="bg-[url(/images/banner-bg.png)] bg-cover bg-center relative">
+    <section id="banner" className="bg-[url(/images/banner-bg.png)] bg-cover bg-center relative">
       <Container>
         <Swiper
           modules={[Navigation, Pagination]}
