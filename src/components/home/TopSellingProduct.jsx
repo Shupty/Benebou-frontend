@@ -1,13 +1,17 @@
-
-
 import React from "react";
-import Container from "../Container";
+import Container from "../layout/Container";
 import Title from "@/components/common/Title";
 import TopSelling from "./TopSellingView";
 
 const TopSellingProduct = async () => {
-  let data = await fetch("https://fakestoreapi.com/products?limit=10");
-  let product = await data.json();
+  const res = await fetch("https://dummyjson.com/products");
+
+  if (!res.ok) {
+    throw new Error("Failed to fetch data");
+  }
+
+  const data = await res.json();
+  const products = data.products;
 
   return (
     <section id="topselling" className=" mt-22.75 ">
@@ -20,7 +24,7 @@ const TopSellingProduct = async () => {
             </button>
           </div>
         </div>
-     <TopSelling product={product}/>
+        <TopSelling product={products} />
       </Container>
     </section>
   );

@@ -1,25 +1,25 @@
-import Banner from '@/components/layout/home/Banner'
-import Blog from '@/components/layout/home/Blog'
-import Category from '@/components/layout/home/Category'
-import Content from '@/components/layout/home/Content'
-import Discount from '@/components/layout/home/Discount'
-import FeaturedProduct from '@/components/layout/home/FeaturedProduct'
-import TopSellingProduct from '@/components/layout/home/TopSellingProduct'
-
-
+import Banner from "@/components/home/Banner";
+import Blog from "@/components/home/Blog";
+import Category from "@/components/home/Category";
+import Content from "@/components/home/Content";
+import Discount from "@/components/home/Discount";
+import FeaturedProduct from "@/components/home/FeaturedProduct";
+import TopSellingProduct from "@/components/home/TopSellingProduct";
+import Whatsapp from "@/components/home/Whatsapp";
 
 const page = () => {
   return (
-     <main className='mb-20'>
-      <Banner/>
-     <Content/>
-     <FeaturedProduct/>
-     <Category/>
-     <TopSellingProduct/>
-     <Discount/>
-     <Blog/>
+    <main>
+      <Banner />
+      <Content />
+      <FeaturedProduct />
+      <Category />
+      <TopSellingProduct />
+      <Discount />
+      <Blog />
+      <Whatsapp />
     </main>
-  )
-}
+  );
+};
 
-export default page
+export default page;

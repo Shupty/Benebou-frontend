@@ -1,21 +1,15 @@
-import { UserRound, Heart, ShoppingBag, Menu } from "lucide-react";
+import { UserRound, Heart, ShoppingBag } from "lucide-react";
+import HeaderCart from "./HeaderCart";
+import HeaderLogin from "./HeaderLogin";
 
-const Icons = () => {
+const Icons = ({ className }) => {
   return (
-    <div className=" flex items-center gap-7.5 ml-auto">
+    <div className={`${className} flex items-center gap-7.5 ml-auto`}>
+      <HeaderLogin />
       <button className=" size-5 text-secondary">
-        <UserRound />
+        <Heart className="size-5" />
       </button>
-       <button className=" size-5 text-secondary">
-        <Heart />
-      </button>
-       <button className=" relative size-5 text-secondary">
-        <ShoppingBag />
-        <span className=" size-4 bg-primary text-[10px] font-medium text-white absolute -bottom-2.5 -right-2.5 rounded-full">3</span>
-      </button>
-       <button className=" size-5 text-secondary">
-        <Menu />
-      </button>
+      <HeaderCart />
     </div>
   );
 };

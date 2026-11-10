@@ -249,7 +249,7 @@
 
 @layer components {
   .list-item {
-    @apply cursor-pointer text-sm font-medium relative text-white leading-6 after:content-[''] after:w-0 hover:after:w-full duration-500 after:h-0.5 after:bg-white after:absolute after:bottom-0 after:left-0;
+    @apply cursor-pointer text-sm font-medium relative text-white leading-6 after:content-[''] after:w-0 hover:after:w-full after:duration-500 after:h-0.5 after:bg-white after:absolute after:bottom-0 after:left-0;
     }
 
     #banner .swiper-pagination-bullet{
@@ -269,7 +269,7 @@
       @apply !size-1.5 !bg-primary-black rounded-full !opacity-100 relative after:content-[''] after:size-7.5 after:border-2 after:border-primary-black after:rounded-full after:absolute after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2;
     }
      #topselling .swiper-pagination{
-      @apply flex !gap-7 !bottom-10 !left-[40%] ;
+      @apply flex !gap-4 md:gap-7! !bottom-10 !left-2.5; ;
     }
     #topselling .swiper-wrapper{
       @apply !pb-20;

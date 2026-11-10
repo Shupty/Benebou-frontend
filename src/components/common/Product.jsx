@@ -20,11 +20,11 @@ const Product = ({ item }) => {
   };
 
   return (
-    <div className=" relative group border border-[#E4E4E4] w-[255px] duration-300 hover:shadow-lg hover:shadow-primary-black/2.5 rounded-lg overflow-hidden">
-      {item?.image ? (
+    <div className=" relative group border border-[#E4E4E4] md:w-63.75 w-full h-full duration-300 hover:shadow-lg hover:shadow-primary-black/2.5 rounded-lg overflow-hidden">
+      {item?.images ? (
         <Image
-          className=" w-[255px] h-[200px] object-contain "
-          src={item?.image}
+          className=" md:w-63.75 md:h-50 object-contain "
+          src={item?.images[0]}
           alt="product"
           width={255}
           height={200}
@@ -97,7 +97,7 @@ const Product = ({ item }) => {
           </li>
         </ul>
       </div>
-      <div className="pt-8.5 pl-5 pr-8.25 pb-3.25">
+      <div className="pt-8.5 pl-3 md:pl-5 pr-3 md:pr-8.25 pb-3.25">
         <h4 className="text-sm font-normal text-primarygray ">Electronics</h4>
         <h2 className=" truncate text-[15px] font-normal text-primary-black mt-0.5">
           {item?.title ? item?.title : "Headphone"}

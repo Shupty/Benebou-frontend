@@ -8,19 +8,19 @@ import {
 } from "@/components/ui/select";
 import { Search } from 'lucide-react';
 
-const SearchInput = () => {
+const SearchInput = ({ className }) => {
     const items = [
   { label: "Men", value: "Men" },
   { label: "Women", value: "Women" },
   { label: "Children", value: "Children" },
 ]
   return (
-    <div className=" w-136 h-12.5 relative flex items-center">
+   <div className={`${className} w-full md:w-136 min-w-0 h-12.5 relative items-center`}>
       <input
-        className=" w-full h-full rounded-sm pl-5 text-white bg-secondary"
-        type="text"
-        placeholder="Search product..."
-      />
+    className=" w-full h-full rounded-sm pl-5 pr-36 text-white bg-secondary"
+    type="text"
+    placeholder="Search product..."
+  />
       <div className=" absolute right-4 flex items-center gap-4.25">
         <Select items={items}>
           <SelectTrigger className="w-25 border-none">

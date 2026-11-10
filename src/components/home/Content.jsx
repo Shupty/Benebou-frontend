@@ -1,5 +1,5 @@
 import React from "react";
-import Container from "../Container";
+import Container from "../layout/Container";
 import ContentCard from "./ContentCard";
 
 const Content = () => {
@@ -95,7 +95,7 @@ const Content = () => {
   return (
     <section className="bg-bg-gray">
       <Container>
-        <div className="flex items-center justify-between">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 ">
           {contentData.map((item) => (
             <ContentCard key={item.id} item={item} />
           ))}
